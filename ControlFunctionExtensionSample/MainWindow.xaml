@@ -6,7 +6,38 @@
         xmlns:local="clr-namespace:ControlFunctionExtensionSample"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <ResourceDictionary Source="Themes/Generic.xaml"/>
+    </Window.Resources>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <Button Content="Test1" Width="80" Height="80" FocusVisualStyle="{x:Null}" Background="LightSeaGreen" BorderBrush="DarkBlue">
+                <Button.Template>
+                    <ControlTemplate TargetType="ButtonBase">
+                        <Grid>
+                            <Ellipse x:Name="ellipseBorder" StrokeThickness="1" Stroke="{TemplateBinding BorderBrush}" Fill="{TemplateBinding Background}"/>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="{TemplateBinding Content}"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Stroke" Value="Orange" TargetName="ellipseBorder"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Stroke" Value="OrangeRed" TargetName="ellipseBorder"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <local:WaterMarkTextBox Margin="20,0,0,0" Width="200" Height="50" WaterMark="Please Input your name"/>
 
+            <TextBox Style="{StaticResource TextBoxWithWaterMark}" Margin="20,0,0,0" Width="200" Height="50" local:WaterMarkHelper.WaterMark="Please Input your name"/>
+        </StackPanel>
     </Grid>
+    
 </Window>
