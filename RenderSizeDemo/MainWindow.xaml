@@ -11,9 +11,22 @@
             <RowDefinition Height="50"/>
             <RowDefinition/>
         </Grid.RowDefinitions> 
-        <Button Width="80" Height="40" Content="放大" Click="ScaleButton_OnClick"/>
-        <Canvas x:Name="canvas" Grid.Row="1" Width="400" Height="400" Background="AliceBlue">
-            <Rectangle Width="20" Height="30" Fill="Red" Canvas.Left="80" Canvas.Top="70"></Rectangle>
-        </Canvas>
+        <WrapPanel>
+            <Button Width="80" Height="40" Content="放大" Click="ScaleButton_OnClick"/>
+            <TextBox x:Name="tbPosition"/>
+        </WrapPanel>
+        <DockPanel Grid.Row="1" ClipToBounds="False" Background="DarkGoldenrod" Width="600" Height="500">
+            <Canvas x:Name="canvas" Background="Blue" Opacity="0.4" ClipToBounds="False">
+                <Rectangle x:Name="rect" Width="231" Height="78" Fill="Red"></Rectangle>
+            </Canvas>
+        </DockPanel>
+        
+        
+        <!--<Canvas Grid.Row="1" Width="400" Height="400" Background="BlueViolet">
+            <Rectangle Width="20" Height="30" Fill="Red"></Rectangle>
+            <Canvas.RenderTransform>
+                <ScaleTransform ScaleX="0.5" ScaleY="0.5"></ScaleTransform>
+            </Canvas.RenderTransform>
+        </Canvas>-->
     </Grid>
 </Window>
