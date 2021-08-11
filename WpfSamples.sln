@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeometryDemo", "GeometryDem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CachingElementToImproveRenderingPerformanceDemo", "CachingElementToImproveRenderingPerformanceDemo\CachingElementToImproveRenderingPerformanceDemo.csproj", "{4E87D9E6-4860-48B5-8BFC-3E4064391FBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonChromeDemo", "ButtonChromeDemo\ButtonChromeDemo.csproj", "{CFB39F22-1B93-4484-BAD4-8C26BEB88466}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ButtonChromeDemo", "ButtonChromeDemo\ButtonChromeDemo.csproj", "{CFB39F22-1B93-4484-BAD4-8C26BEB88466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimationDemo", "AnimationDemo\AnimationDemo.csproj", "{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,18 @@ Global
 		{CFB39F22-1B93-4484-BAD4-8C26BEB88466}.Release|x64.Build.0 = Release|Any CPU
 		{CFB39F22-1B93-4484-BAD4-8C26BEB88466}.Release|x86.ActiveCfg = Release|Any CPU
 		{CFB39F22-1B93-4484-BAD4-8C26BEB88466}.Release|x86.Build.0 = Release|Any CPU
+		{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}.Debug|x64.Build.0 = Debug|Any CPU
+		{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}.Debug|x86.Build.0 = Debug|Any CPU
+		{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}.Release|x64.ActiveCfg = Release|Any CPU
+		{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}.Release|x64.Build.0 = Release|Any CPU
+		{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}.Release|x86.ActiveCfg = Release|Any CPU
+		{7F1D7A21-3E32-444C-9E31-E5C0BCBC9445}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
